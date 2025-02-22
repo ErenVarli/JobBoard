@@ -1,4 +1,4 @@
-# JobBoard - First React APP
+# JobBoard - First React App
 
 **JobBoard** is a web application enabling companies to publish job offers and users to apply. The project includes an administration interface for managing ads, as well as a dedicated user interface.
 
