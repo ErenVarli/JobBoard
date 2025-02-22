@@ -1,0 +1,313 @@
+@media (min-width: 1100px) {
+  h1 {
+    font-size: 64px !important;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-weight: 100 !important;
+  }
+
+  .container {
+    margin: auto;
+    height: 90vh;
+    display: flex;
+  }
+
+  .sub-container {
+    text-align: center;
+    display: flex;
+  }
+
+  form {
+    box-shadow: 0px 0px 0px 1px rgb(128, 128, 128);
+    width: 360px;
+    height: auto;
+    border-radius: 5px;
+    padding: 40px;
+    padding-top: 70px;
+    background-color: #393e46;
+  }
+
+  #signup-form {
+    width: 580px;
+  }
+  #login-form {
+    width: 400px;
+    height: 450px;
+  }
+
+  .d-flex-m {
+    display: flex;
+  }
+  .card-container {
+    margin: auto;
+    width: 1200px;
+  }
+  .card {
+    box-shadow: 1px 1px 2px 2px rgb(217, 215, 215);
+    width: 600px;
+    border-radius: 10px;
+  }
+
+  .card:hover {
+    z-index: 10;
+  }
+
+  .card-button {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    z-index: 10;
+  }
+
+  .card-description {
+    width: auto;
+  }
+
+  .card-description > div:first-of-type {
+    width: 60% !important;
+    /** Color here :) */
+  }
+
+  .card-description div {
+    border-radius: 15px;
+  }
+
+  .description-minim {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    padding-left: 0 !important;
+  }
+  .description-minim h3 {
+    font-size: 16px;
+  }
+  svg {
+    margin-right: 10px;
+  }
+
+  .side-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100% !important;
+    padding-top: 150px;
+    z-index: 1;
+  }
+
+  .settings-page-content {
+    height: 100vh !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex !important;
+  }
+
+  #container-settings-form form {
+    width: 1000px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1250px) {
+  h1 {
+    font-size: 7vh !important;
+  }
+
+  h2 {
+    font-size: 4vh !important;
+  }
+  ul {
+    padding: 0 !important;
+  }
+
+  .container {
+    margin-top: 10%;
+  }
+  form {
+    width: 80vw;
+  }
+
+  .navbar {
+    padding-left: 10px !important;
+    padding-right: 20px !important;
+  }
+  #navbarNav {
+    background-color: #222831 !important;
+    padding-left: 5vw !important;
+    padding-top: 2vh !important;
+    padding-bottom: 2vh !important;
+    position: absolute !important;
+    top: 50px !important;
+    width: 95vw !important;
+  }
+  .navbar-toggler {
+    background-color: #375fac !important;
+    height: 30px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    z-index: 100;
+  }
+
+  .card-container {
+    width: auto;
+    margin: auto;
+  }
+  .card {
+    width: 90% !important;
+    height: auto !important;
+    margin: auto;
+  }
+
+  .card-description {
+    width: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100% !important;
+    padding: 2%;
+    padding-top: 5%;
+  }
+
+  .card-description div {
+    border-radius: 15px;
+    font-size: 13px !important;
+  }
+
+  .description-minim {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    padding-left: 0 !important;
+  }
+  .description-minim h3 {
+    font-size: 12px;
+  }
+
+  .description-minim-container {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  svg {
+    margin-right: 10px;
+  }
+
+  #settings-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: auto;
+  }
+  #settings-menu button {
+    width: 200px;
+    height: 100px !important;
+  }
+
+  .side-form {
+    width: 100%;
+  }
+
+  .settings-page-content h2 {
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 600px) {
+  ul {
+    padding: 0 !important;
+  }
+  h1 {
+    font-size: 6vh !important;
+  }
+
+  h2 {
+    font-size: 4vh !important;
+  }
+
+  .navbar-toggler {
+    background-color: #375fac !important;
+    height: 30px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    z-index: 100;
+  }
+  #navbarNav {
+    background-color: #222831 !important;
+    padding-left: 5vw !important;
+    padding-top: 2vh !important;
+    padding-bottom: 2vh !important;
+    position: absolute !important;
+    top: 50px !important;
+    width: 95vw !important;
+  }
+  .container {
+    margin-top: 10%;
+  }
+  form {
+    width: 80vw;
+  }
+
+  .navbar {
+    padding-left: 10px !important;
+    padding-right: 20px !important;
+  }
+  .card-container {
+    width: auto;
+    margin: auto;
+  }
+  .card {
+    width: 90% !important;
+    height: auto !important;
+    margin: auto;
+  }
+
+  .card-description {
+    width: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100% !important;
+    padding: 2%;
+    padding-top: 5%;
+  }
+
+  .card-description div {
+    border-radius: 15px;
+    font-size: 13px !important;
+  }
+
+  .description-minim {
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    padding-left: 0 !important;
+  }
+  .description-minim h3 {
+    font-size: 12px;
+  }
+
+  .description-minim-container {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  svg {
+    margin-right: 10px;
+  }
+
+  #settings-menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .side-form {
+    width: 100%;
+  }
+
+  .settings-page-content h2 {
+    text-align: left !important;
+    font-size: 32px !important;
+  }
+}

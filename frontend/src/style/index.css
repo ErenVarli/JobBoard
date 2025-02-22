@@ -1,0 +1,493 @@
+html, body {
+  background-color: #222831 !important;
+  height: 100%;
+  margin: 0;
+}
+/* General */
+.navbar-collapse {
+  justify-content: flex-end !important;
+}
+.navbar {
+  height: 50px !important;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #222831 !important;
+  border-bottom: 1px solid gray;
+  z-index: 100;
+}
+
+.navbar a {
+  color: white !important;
+}
+
+/*navbar Admin*/
+.navbarAdmin {
+  width: 20%;
+  min-height: 100vh;
+  background-color: rgb(34, 40, 49);
+  display: flex;
+  flex-direction: column;
+  color: #00FFF5;
+  box-shadow: 0px 0px 30px -5px rgba(255, 255, 255, 0.5);
+  position: fixed;
+}
+
+.logo {
+  height: 35vh;
+  font-size: 3vw;
+  margin-top: 10%;
+  font-weight: bold;
+  margin-left: 1vw;
+}
+.menu {
+  list-style-type: none;
+  padding: 0;
+  font-size: 2vw;
+  font-family: inter;
+}
+.menu-item {
+  height: 6vh;
+  display: flex;
+  transition: height 0.5s;
+}
+.menu-item:hover{
+  background-color: #00FFF5;
+  height: 7vh;
+}
+
+.menu-item:hover .link {
+  color: black;
+}
+
+.link {
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s;
+  margin-left: 1vw;
+  display: flex;
+  align-items: center;
+}
+
+* {
+  font-family: "Inter";
+}
+
+.collapse {
+  justify-content: flex-end;
+}
+
+button:not(.btn-admin) {
+  border: none;
+  padding: 12px 8px;
+  border-radius: 5px !important;
+}
+
+button:not(.btn-admin):hover {
+  background-color: var(--blue-ocean);
+}
+
+button.btn-admin {
+  /*background-color: initial;
+  color: initial;
+  padding: initial;
+  padding: initial;
+  border: initial;
+  border-radius: initial;*/
+  border: none;
+  padding: initial;
+  color: white;
+  font-family: inter;
+}
+button.btn-admin:hover{
+ /* background-color: initial;*/
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+p {
+  color: white;
+}
+h1 {
+  font-weight: lighter;
+}
+
+h2 {
+  font-weight: bold;
+  line-height: 42px;
+}
+.sub-container {
+  width: 80%;
+  margin: auto;
+}
+
+.sub-container div {
+  margin-bottom: 25px;
+}
+
+.navbar-toggler {
+  background-color: white;
+}
+
+.container img {
+  width: 15%;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.right {
+  float: right;
+}
+
+.margin-none {
+  margin: 0;
+}
+
+#form-header {
+  margin-top: -20px;
+}
+
+/* card admin */
+.postsAdmin {
+  width: 100%;
+}
+.card-containerAdmin {
+  margin-top: 3vh;
+}
+.cardAdmin {
+  display: flex;
+  flex-direction: column;
+  /*background-color: #393e46 ;*/
+  width: 98%;
+  margin-left: 1%;
+  border-top: 0.1vw solid white;
+  /*box-shadow: 0px 0px 0.1vh 0px rgba(0, 0, 0, 0.5);*/
+  transition:box-shadow 10s ;
+}
+.cardAdmin:hover {
+  /*box-shadow: 0px 0px 1vh 0px rgba(0, 173, 181, 0.5);*/
+}
+.header-card {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-items: center;
+  margin-top: 1.5vh;
+}
+.title{
+  resize: none;
+}
+.company{
+  resize: none;
+}
+.contract{
+  resize: none;
+  height: 9vh;
+}
+.title-job {
+  margin-top: 0;
+  margin-left: 1vh;
+  font-size: 2vw;
+  font-weight: bold;
+  font-family: inter;
+}
+.company-name {
+  margin-top: 0;
+  margin-left: 1vh;
+  font-size: 1.5vw;
+  font-family: inter;
+}
+
+.title-job:first-of-type::after {
+  content: " /"; /* Le slash ajouté après*/
+}
+.visible-card {
+  display: flex;
+  flex: row;
+  align-items: center;
+  /*box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);*/
+}
+.details {
+  background-color: #0C8CE9;
+  margin-left: 0vh;
+  height: 3vw;
+  width: 15%;
+  border-radius: 2vw;
+  border: none; 
+  font-size: 1vw;
+}
+.details:hover {
+  background-color: #53aff1;
+}
+.modify {
+  background-color: #FFC16B;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  height: 3vw;
+  width: 5%;
+  border-radius: 1.2vw;
+  border: none; 
+}
+.modify:hover {
+  background-color: #b86b00;
+}
+.img-modify {
+  width: 100%;            
+  height: 100%;            
+  object-fit: contain;     
+  display: block;   
+}
+.delete {
+  height: 3vw;
+  width: 100%;
+  border-radius: 2vw;
+  border: none;
+  margin-left: auto;            
+  border: none;  
+  background-color: red;
+  font-size: 1vw;
+}
+.delete:hover {
+  background-color: rgb(255, 103, 103);
+}
+
+.card-details {
+  margin:0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre pour donner du relief */
+}
+.card-contract{
+  margin-left: 1vh;
+  margin-top: 2vh;
+  font-size: 20px;
+  color: white;
+  font-family: inter;
+}
+.card-description {
+  margin-left: 0;
+  color: white;
+  font-size: 20px;
+  font-family: inter;
+}
+
+.btn-creat-ad {
+  background-color: #00CB25;
+  border: none;
+  border-radius: 3vw;
+  height: 5vw;
+  width: 40%;
+  color: white;
+  font-size: 2.5vw;
+  font-family: inter;
+  margin-left: 2vh;
+  margin-top: 15vh;
+}
+
+
+
+.card {
+  color: #dddddd;
+  box-shadow: 0px 0px 0px 1px rgb(144, 144, 144);
+  transition: all 0.1s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 0px 3px rgb(144, 144, 144);
+}
+.apply-button {
+  background-color: #b4e1dc;
+  color: black !important;
+  border: none;
+  margin-top: 25px !important;
+  margin-bottom: 25px !important;
+}
+
+.apply-button:hover {
+  background-color: #4cc3b5;
+}
+.description-minim h3 {
+  font-weight: 550;
+  color: rgb(255, 255, 255);
+}
+.empty-button {
+  background-color: #00ADB5;
+  width: 100%;
+  border: none;
+}
+.empty-button:hover {
+  background-color: #6d7372;
+}
+.back-button{
+  position: absolute;
+  bottom: 50px;
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+}
+.back-button:hover{
+  background-color: transparent;
+}
+
+#Capa_1{
+  margin-left: 15px;
+}
+
+.center{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#hello-message h1{
+  position: absolute;
+  top: 120px;
+  left: 20%;
+}
+.deleteForm {
+  padding: 0;
+  border: none;
+  width: 10%;
+  height: auto;
+  background: none;
+  box-shadow: none;
+  font-size: 1vw;
+  margin-left: auto;
+}
+/* form edit admin*/
+.editCardAdmin {
+  width: 100%;
+  height: auto;
+  box-shadow: none;
+  padding: 0;
+  border: none;
+  background-color: #222831;
+}
+/*.input{
+  height: 3vw;
+  width: 100%;
+  border: 0.1vw solid black;
+  background-color: none;
+  background-color: #00ADB5;
+}
+.textarea{
+  height: 3vw;
+  width: 100%;
+  border: 0.1vw solid black;
+}*/
+
+.input {
+  width: 100%;
+  padding: 1vh 2vh;
+  margin: 8px 0;
+  box-sizing: border-box;
+  
+  border: 1px solid #ccc;
+  border-radius: 1vh;
+  background: none;
+  
+  font-size: 2vw;
+  color: white;
+  
+  transition: all 0.3s ease;
+}
+
+.input:focus {
+  color: black;
+  outline: none;
+  border-color: #00ADB5;
+  background-color: #00FFF5;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+.input::placeholder {
+  color: #aaa; 
+  font-style: italic;
+}
+.textarea {
+  width: 100%;
+  padding: 1vh 2vh;
+  margin: 8px 0;
+  box-sizing: border-box;
+  
+  border: 1px solid #ccc;
+  border-radius: 1vh;
+  background: none;
+  
+  font-size: 2vw;
+  color: #AAAAAA;
+  font-style: italic;
+  transition: all 0.3s ease;
+}
+.name, .email, .password{
+  resize: none;
+  height: 9vh;
+}
+.textarea:focus {
+  color: black;
+  outline: none;
+  border-color: #00ADB5;
+  background-color: #00FFF5;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+.textarea::placeholder {
+  color: #aaa; 
+  font-style: italic;
+}
+.company {
+  margin-left: 3vh;
+}
+.validate {
+  height: 3vw;
+  width: 10%;
+  margin-bottom: 1vh;
+  font-size: 2vw;
+  font-family: inter;
+  margin-left: 1vh;
+}
+/*dashboard*/
+
+.dashboard-container{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  gap: 8vh;
+}
+.top-bloc{
+  display: flex;
+  flex-direction: row;
+  height: 25vh;
+  margin-top: 20vh;
+  gap: 5vh;
+}
+.bloc-posts{
+  background-color: #00ADB5;
+  flex: 2;
+  border-radius: 3vh;
+}
+.bloc-companies{
+  display: flex;
+  background-color: #00CB25;
+  flex: 2;
+  border-radius: 3vh;
+}
+.bloc-users{
+  background-color: #00FFF5;
+  height: 23vh;
+  border-radius: 3vh;
+
+}
+
+
+.back-button{
+  background-color: none !important;
+  text-decoration: underline;
+  position: relative;
+  top: -20px !important;
+}
